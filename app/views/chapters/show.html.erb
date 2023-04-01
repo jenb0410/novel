@@ -1,0 +1,16 @@
+<h1><%= @chapter.title %></h1>
+
+<div>
+  <p><strong>Chapter Number:</strong> <%= @chapter.number %></p>
+  <p><strong>Story:</strong> <%= @chapter.story.title %></p>
+  <p><strong>Author:</strong> <%= @chapter.story.user.username %></p>
+  <p><strong>Tags:</strong>
+    <% @chapter.tags.each do |tag| %>
+      <%= tag.name %>
+    <% end %>
+  </p>
+</div>
+
+<div>
+  <p><%= @chapter.content %></p>
+</div>

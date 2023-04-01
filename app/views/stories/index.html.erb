@@ -1,6 +1,6 @@
 <h1>Recent Stories</h1>
 
-<% Story.all.each do |story| %>
+<% @stories.each do |story| %>
   <div class="story">
     <h2><%= story.title %></h2>
     <p><%= story.summary %></p>
